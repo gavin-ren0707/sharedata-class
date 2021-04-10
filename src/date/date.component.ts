@@ -2,9 +2,9 @@ import { Component, VERSION } from '@angular/core';
 
 @Component({
   selector: 'my-app',
-  templateUrl: './app.component.html',
-  styleUrls: [ './app.component.css' ]
+  templateUrl: './date.component.html',
+  styleUrls: [ './date.component.css' ]
 })
-export class AppComponent  {
+export class DateComponent  {
   name = 'Angular ' + VERSION.major;
 }
