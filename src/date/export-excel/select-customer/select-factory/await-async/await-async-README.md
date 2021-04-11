@@ -23,3 +23,14 @@ rejected: 已拒絕，操作失敗
 
 // Chain 鏈接方法
 then() 所 turn 的資料內容會在下一個 then 接收，用此方法就可以減少 Callback 問題，也可以依序執行不同的 promise 事件。
+
+//Fetch
+fetch 會使用 ES6 的 Promise 作回應
+then 作為下一步
+catch 作為錯誤回應 (404, 500…)
+
+arrayBuffer()
+blob()   //將資料轉成物件   
+formData()
+json()
+text()  // 轉成文字檔
