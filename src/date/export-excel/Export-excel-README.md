@@ -1,4 +1,5 @@
-匯出excel:
+## 匯出excel:
+## function
 onExportDataAsExcel() {
 		const params = {
 			allColumns: true,

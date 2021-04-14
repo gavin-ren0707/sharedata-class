@@ -1,12 +1,13 @@
 // 取得工廠集合
 // 呼叫api
+## function
 	getFactories() {
 		this.organizationService.getFactories().subscribe(res => {
 			this.fromFactories = res.filter(p => p.typeFeaturePrefix = 4);
 		});
 	};
 
-// html
+## html
   <mat-form-field>
                 <mat-label>{{ '工廠' | translate }}</mat-label>
                 <mat-select [(ngModel)]="param.fromFactory" [disabled]="!param.canUseFromFactory"
