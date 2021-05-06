@@ -7,6 +7,11 @@ setGridOption() {
 			}
 		};
 		this.getGridOptions().context = {
+      this.getGridOptions().getRowClass = params => {
+            if (params.data && params.data.status === StockTypeStatus.DELETE) {
+                return 'del-line';
+            }
+        };
 			buttonFunc: this.getButtonFunc(),
 		};
 	}

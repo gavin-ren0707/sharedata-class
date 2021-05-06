@@ -11,4 +11,20 @@
  ## 今年1月第一天的12.pm
  moment().startOf('month')
 
+ ## 日期的防呆
+ 結束日不能小於開始日
+ # html
+ <mat-error *ngIf="checkEndAt()">
+{{ 'VALIDATION.ENDAT_MUST_BE_GREATRR_THAN_STARTAT' | translate }}
+</mat-error>
+
+# ts
+checkEndAt() {
+        if (this.stockType.endAt < this.stockType.startAt) {
+            return true;
+        }
+        return false;
+    }
+
+    
  
