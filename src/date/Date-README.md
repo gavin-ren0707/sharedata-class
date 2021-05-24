@@ -10,6 +10,9 @@
  years:
  ## 今年1月第一天的12.pm
  moment().startOf('month')
+ ## 抓年份,要轉成date型別
+ new Date().getFullYear()
+
 
  ## 日期的防呆
  結束日不能小於開始日
